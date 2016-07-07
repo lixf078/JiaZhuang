@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:background="@android:color/white">
+	<RelativeLayout
+		android:id="@+id/head_layout"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:background="#eff0f1">
+		<TextView android:id="@+id/btn_datetime_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingRight="44dp"
+			android:layout_marginLeft="15dp"
+			android:gravity="center_vertical"
+			android:textColor="#646464"
+			android:textSize="@dimen/lib_style_text_size_small"
+			android:text="取消"/>
+		<TextView android:id="@+id/btn_datetime_sure"
+			android:layout_toRightOf="@id/btn_datetime_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="15dp"
+			android:gravity="right|center_vertical"
+			android:textSize="@dimen/lib_style_text_size_small"
+			android:textColor="#646464"
+			android:text="确定"/>
+	</RelativeLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/timePicker1"
+		android:layout_below="@id/head_layout"
+		android:gravity="center_horizontal"
+		android:layout_marginBottom="15dp">
+		<!--<com.amo.wheelview.WheelView
+			android:id="@+id/year"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp"/>
+		<com.amo.wheelview.WheelView
+			android:id="@+id/month"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@id/year"
+			android:layout_alignBottom="@id/year"
+			android:layout_alignTop="@id/year"/>-->
+		<com.amo.wheelview.WheelView
+			android:id="@+id/day"
+			android:layout_height="wrap_content"
+			android:layout_width="150dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp"/>
+		<com.amo.wheelview.WheelView
+			android:id="@+id/hour"
+			android:layout_height="wrap_content"
+			android:layout_width="80dp"
+			android:layout_toRightOf="@id/day"
+			android:layout_alignBottom="@id/day"
+			android:layout_alignTop="@id/day"/>
+		<com.amo.wheelview.WheelView
+			android:id="@+id/mins"
+			android:layout_height="wrap_content"
+			android:layout_width="80dp"
+			android:layout_toRightOf="@id/hour"
+			android:layout_alignBottom="@id/day"
+			android:layout_alignTop="@id/day"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:background="@drawable/lib_style_bg_item_time_picker"
+			android:layout_centerInParent="true"/>
+	</RelativeLayout>
+
+
+</RelativeLayout>

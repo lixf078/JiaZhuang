@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_community_drop_bg">
+
+    <View
+        android:id="@+id/dissmiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/share_margin_side">
+
+
+        <LinearLayout
+            android:id="@+id/share_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/share_margin_side"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_margin_side"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/share_pic_special_sun_tab_device"
+                android:drawableTop="@drawable/share_logo_qq"
+                android:gravity="center"
+                android:text="@string/share_qq"
+                android:textSize="@dimen/lib_style_text_size_small" />
+
+            <TextView
+                android:id="@+id/wechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_margin_side"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/share_pic_special_sun_tab_device"
+                android:drawableTop="@drawable/share_logo_wechat"
+                android:gravity="center"
+                android:text="@string/share_wechat"
+                android:textSize="@dimen/lib_style_text_size_small" />
+
+            <TextView
+                android:id="@+id/wechat_circle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_margin_side"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/share_pic_special_sun_tab_device"
+                android:drawableTop="@drawable/share_logo_wechatmoments"
+                android:gravity="center"
+                android:text="@string/share_wechatmoments"
+                android:textSize="@dimen/lib_style_text_size_small" />
+
+            <TextView
+                android:id="@+id/qzone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_margin_side"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/share_pic_special_sun_tab_device"
+                android:drawableTop="@drawable/share_logo_qzone"
+                android:gravity="center"
+                android:text="@string/share_qzone"
+                android:textSize="@dimen/lib_style_text_size_small" />
+
+            <TextView
+                android:id="@+id/sinaweibo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_margin_side"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/share_pic_special_sun_tab_device"
+                android:drawableTop="@drawable/share_logo_sinaweibo"
+                android:gravity="center"
+                android:text="@string/share_sinaweibo"
+                android:textSize="@dimen/lib_style_text_size_small" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/share_cannel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_pop_menu_post_detail_menu_height"
+            android:layout_below="@+id/share_logo"
+            android:layout_marginLeft="@dimen/share_margin_side"
+            android:layout_marginRight="@dimen/share_margin_side"
+            android:background="@drawable/share_btn_bg_selctor"
+            android:text="@string/share_button_cancel"
+            android:textColor="@color/share_color_btn_text"
+            android:textSize="@dimen/lib_style_text_size_big" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

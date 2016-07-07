@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lib_style_divider_color">#eeeeee</color>
+    <color name="lib_style_divider_head">#d5d5d5</color>
+    <drawable name="lib_style_page_bottom_enable">#ff581e</drawable>
+    <drawable name="lib_style_while">#ffffff</drawable>
+    <drawable name="lib_style_black">#646464</drawable>
+    <drawable name="lib_style_page_bottom_disable">#99ff581e</drawable>
+    <drawable name="lib_style_icon_default">#c9cbcd</drawable>
+    <color name="lib_style_loading_bg_color">#98000000</color>
+    <color name="lib_style_view_divider">#e4e4e4</color>
+    <color name="lib_style_white">#ffffff</color>
+    <color name="lib_style_black">#000000</color>
+    <color name="lib_style_soft_gray">#A0A0A0</color>
+    <color name="lib_style_half_black">#282828</color>
+    <color name="lib_style_common_orange">#ff581e</color>
+    <color name="lib_style_common_background">#eef2f3</color>
+    <color name="lib_style_title_color">#646464</color>
+
+    <color name="orange_text">#ff581e</color>
+
+    <color name="lib_style_page_bottom_enable">#ff581e</color>
+    <color name="lib_style_page_bottom_disable">#99ff581e</color>
+
+    <color name="order_state_unstart">#d4d4d4</color>
+    <color name="order_state_doing">#38c875</color>
+    <color name="order_state_complete">#ff7200</color>
+    <color name="lib_style_transparent">#00000000</color>
+
+    <!-- 剪切图片页面，paint的颜色 -->
+    <color name="lib_style_comm_clip_image_paint">#aa000000</color>
+    <color name="lib_style_comm_photo_preview_bg">#65BBF6</color>
+
+    <color name="lib_style_alert_view_divider">#d5d5d5</color>
+</resources>

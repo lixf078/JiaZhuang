@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lib.share</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_wechat">微信好友</string>
+    <string name="share_wechatmoments">朋友圈</string>
+    <string name="share_sinaweibo">微博</string>
+    <string name="share_button_cancel">取消</string>
+    <string name="lib_share_from_common">【家装管家】</string>
+    <string name="lib_share_sina_yiqi_name">一起装修网</string>
+    <string name="lib_share_pic">【分享美图】</string>
+</resources>

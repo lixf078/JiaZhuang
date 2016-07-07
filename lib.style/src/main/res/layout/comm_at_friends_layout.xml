@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="left"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/search_back_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lib_style_head_back_selector"
+            android:contentDescription="登录" />
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/search_back_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的好友"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/search_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/search_back_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="登录"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lib_style_view_divider" />
+
+    <!--
+         <include
+        android:id="@+id/comm_search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/comm_search_edittext"
+        android:padding="2dp" />
+    -->
+
+    <EditText
+        android:id="@+id/comm_search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lib_style_common_background"
+        android:hint="搜索好友"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="18"
+        android:padding="2dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/search_lastes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#aaaaaa"
+        android:contentDescription="登陆"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="最近联系人" />
+
+    <ListView
+        android:id="@+id/comm_at_friend_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionSearch">
+
+    </ListView>
+
+
+</LinearLayout>

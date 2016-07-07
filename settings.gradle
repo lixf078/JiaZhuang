@@ -1,0 +1,1 @@
+include ':app', ':app.main', ':lib.constants', ':lib.utils', ':lib.style', ':lib.smart', ':lib.share', ':lib.volley', ':lib.ptr', ':lib.photoview', ':lib.base', ':lib.base', ':lib.amap', ':lib.api'

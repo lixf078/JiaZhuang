@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/lib_style_common_head_layout" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rotate_header_frg_order"
+        android:layout_below="@id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_header_progressbar_drawable="@drawable/loading_gray_bg"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eef2f3"
+            android:orientation="vertical" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    <TextView
+        android:id="@+id/foot_view"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/black_border_while_corner"
+        android:gravity="center"
+        android:textColor="@color/lib_style_half_black"
+        android:textSize="@dimen/lib_style_text_size_large"
+        android:visibility="gone"/>
+
+    <ViewStub
+        android:id="@+id/stub_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/lib_style_common_loading" />
+
+    <ViewStub
+        android:id="@+id/stub_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_layout"
+        android:layout_above="@id/foot_view"
+        android:layout="@layout/lib_style_common_no_data" />
+
+    <ViewStub
+        android:id="@+id/stub_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_layout"
+        android:layout="@layout/lib_style_common_no_net" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="share_margin_side">15dp</dimen>
+    <dimen name="share_pic_special_sun_tab_device">10dp</dimen>
+    <dimen name="share_pop_menu_post_detail_menu_height">40dp</dimen>
+</resources>

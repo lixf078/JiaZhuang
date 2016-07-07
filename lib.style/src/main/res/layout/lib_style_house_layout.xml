@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#eff0f1">
+
+        <TextView
+            android:id="@+id/btn_layout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:paddingRight="44dp"
+            android:text="取消"
+            android:textColor="#646464"
+            android:textSize="@dimen/lib_style_text_size_small" />
+
+        <TextView
+            android:id="@+id/btn_layout_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/btn_layout_cancel"
+            android:gravity="right|center_vertical"
+            android:text="确定"
+            android:textColor="#646464"
+            android:textSize="@dimen/lib_style_text_size_small" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/house_layout_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_layout"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal">
+        <!--<com.amo.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/> -->
+        <com.amo.wheelview.WheelView
+            android:id="@+id/house_room"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+
+        <com.amo.wheelview.WheelView
+            android:id="@+id/house_space"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/house_room"
+            android:layout_alignTop="@id/house_room"
+            android:layout_toRightOf="@id/house_room" />
+
+        <com.amo.wheelview.WheelView
+            android:id="@+id/house_cook_room"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/house_room"
+            android:layout_alignTop="@id/house_room"
+            android:layout_toRightOf="@id/house_space" />
+
+        <com.amo.wheelview.WheelView
+            android:id="@+id/house_toilet"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/house_room"
+            android:layout_alignTop="@id/house_room"
+            android:layout_toRightOf="@id/house_cook_room" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lib_style_bg_item_time_picker" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

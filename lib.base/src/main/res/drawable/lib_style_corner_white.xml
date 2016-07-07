@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 圆角效果的背景-->
+    <solid android:color="@color/lib_style_white" />
+    <corners android:radius="8dp" />
+</shape>

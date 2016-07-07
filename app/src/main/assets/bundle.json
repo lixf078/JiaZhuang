@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "bundles": [
+    {
+      "uri": "main",
+      "pkg": "com.aiyiqi.decoration.app.main"
+    }, {
+      "uri": "base",
+      "pkg": "com.aiyiqi.decoration.app.base"
+    },
+    {
+      "uri": "lib.api",
+      "pkg": "com.aiyiqi.decoration.lib.api"
+    },
+    {
+      "uri": "lib.constants",
+      "pkg": "com.aiyiqi.decoration.lib.constants"
+    }
+  ]
+}

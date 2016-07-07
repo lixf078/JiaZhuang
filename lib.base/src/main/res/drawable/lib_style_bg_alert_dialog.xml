@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient android:startColor="@color/lib_style_white"
+        android:endColor="@color/lib_style_white" />
+    <corners android:radius="3dp"></corners>
+    <stroke android:color="@color/lib_style_alert_view_divider" android:width="1px"></stroke>
+</shape>

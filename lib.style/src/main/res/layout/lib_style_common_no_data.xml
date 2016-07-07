@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:drawableTop="@drawable/lib_style_icon_no_data"
+        android:gravity="center"
+        android:text="@string/lib_no_data"
+        android:textColor="#a0a0a0"
+        android:textSize="@dimen/lib_style_text_size_big" />
+</LinearLayout>
